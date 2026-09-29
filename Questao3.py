@@ -18,18 +18,19 @@ class LuminariaSmart:
             print("Erro: O valor da intensidade deve estar entre 0 e 100.")
 
 
-# Instanciando e testando o objeto
-minha_luminaria = LuminariaSmart("LUM-SALA-01")
+if __name__ == "__main__":
+    # Instanciando e testando o objeto
+    minha_luminaria = LuminariaSmart("LUM-SALA-01")
 
-print('-' * 20)
-print(f"Dispositivo: {minha_luminaria.id_dispositivo}")
-print(f"Ligada: {minha_luminaria.ligada}")
-print(f"Intensidade: {minha_luminaria.intensidade}%")
-print('-' * 20)
+    print('-' * 20)
+    print(f"Dispositivo: {minha_luminaria.id_dispositivo}")
+    print(f"Ligada: {minha_luminaria.ligada}")
+    print(f"Intensidade: {minha_luminaria.intensidade}%")
+    print('-' * 20)
 
-minha_luminaria.alternar_estado()  # Liga a luminária
-minha_luminaria.ajustar_intensidade(75)  # Ajusta para 75%
+    minha_luminaria.alternar_estado()  # Liga a luminária
+    minha_luminaria.ajustar_intensidade(75)  # Ajusta para 75%
 
-print(f"Dispositivo: {minha_luminaria.id_dispositivo}")
-print(f"Ligada: {minha_luminaria.ligada}")
-print(f"Intensidade: {minha_luminaria.intensidade}%")
+    print(f"Dispositivo: {minha_luminaria.id_dispositivo}")
+    print(f"Ligada: {minha_luminaria.ligada}")
+    print(f"Intensidade: {minha_luminaria.intensidade}%")

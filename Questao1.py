@@ -1,6 +1,3 @@
-from calendar import prmonth
-
-
 def primeira_questao():
     porta_destavada = False
     nivel_acesso = int(input('Informe seu nível de acesso: '))

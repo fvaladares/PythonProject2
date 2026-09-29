@@ -18,18 +18,19 @@ class HubCentral:
                 print(f"Alerta: {dispositivo.nome} está com apenas {dispositivo.bateria}% de bateria.")
 
 
-# Instanciando o Hub
-hub = HubCentral()
+if __name__ == "__main__":
+    # Instanciando o Hub
+    hub = HubCentral()
 
-# Criando dispositivos com diferentes níveis de bateria
-sensor_janela = DispositivoIoT("Sensor Janela Quarto", 85)
-fechadura = DispositivoIoT("Fechadura Entrada", 15)
-termostato = DispositivoIoT("Termostato Sala", 8)
+    # Criando dispositivos com diferentes níveis de bateria
+    sensor_janela = DispositivoIoT("Sensor Janela Quarto", 85)
+    fechadura = DispositivoIoT("Fechadura Entrada", 15)
+    termostato = DispositivoIoT("Termostato Sala", 8)
 
-# Adicionando ao Hub
-hub.adicionar_dispositivo(sensor_janela)
-hub.adicionar_dispositivo(fechadura)
-hub.adicionar_dispositivo(termostato)
+    # Adicionando ao Hub
+    hub.adicionar_dispositivo(sensor_janela)
+    hub.adicionar_dispositivo(fechadura)
+    hub.adicionar_dispositivo(termostato)
 
-# Gerando o relatório
-hub.relatorio_bateria_baixa()
+    # Gerando o relatório
+    hub.relatorio_bateria_baixa()

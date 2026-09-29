@@ -13,15 +13,17 @@ def analisar_temperaturas(lista_temperaturas):
 
     return media, alertas_calor
 
-
-
-if __name__ == '__main__':
+def inicializacao():
     # Testando a função
     leituras_do_dia = [22.5, 25.0, 31.2, 28.4, 19.8, 32.1]
     media_dia, total_alertas = analisar_temperaturas(leituras_do_dia)
 
     print(f"Média de temperatura: {media_dia:.1f}°C")
     print(f"Quantidade de alertas (acima de 30°C): {total_alertas}")
+
+
+if __name__ == '__main__':
+    inicializacao()
 
 
 
